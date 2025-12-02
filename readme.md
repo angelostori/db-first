@@ -41,9 +41,9 @@ Columns:
 
 - emission_class VARCHAR(50) NOT NULL
 
-- type VARCHAR(50) NOT NULL //suv, berlina, citycar, ecc.
+- type VARCHAR(50) NOT NULL (*suv, berlina, citycar, ecc.*)
 
-- traction CHAR(3) NOT NULL DEFAULT ('2WD')
+- traction CHAR(3) NOT NULL DEFAULT (*2WD*)
 
 - previous_owners TINYINT NULL
 
