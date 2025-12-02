@@ -26,4 +26,4 @@ Columns:
 - type_of_vehicle VARCHAR(50) NOT NULL
 - traction CHAR(3) NOT NULL DEFAULT ('2WD')
 - previous_owners TINYINT NULL
-
+- car_image_url VARCHAR(255) NULL
