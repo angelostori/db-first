@@ -3,48 +3,51 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 ## Table name: cars (Entity name: car)
 
-Columns:
+### Columns:
+fields             type             constrains
 
-- id BIGINT PRIMARY KEY AUTO_INCREMENT
+- id                BIGINT          PRIMARY KEY AUTO_INCREMENT
 
-- brand VARCHAR(50) NOT NULL
+- brand             VARCHAR(50)     NOT NULL
 
-- model VARCHAR(50) NOT NULL
+- model             VARCHAR(50)     NOT NULL
 
-- fuel_type VARCHAR(50) NOT NULL
+- fuel_type         VARCHAR(50)     NOT NULL
 
-- fuel_consumption DECIMAL(5,2) NOT NULL
+- fuel_consumption  DECIMAL(5,2)    NOT NULL
 
-- km_driven INT NOT NULL
+- km_driven         INT             NOT NULL
 
-- year YEAR NOT NULL
+- year              YEAR            NOT NULL
 
-- price DECIMAL(10,2) NOT NULL
+- price             DECIMAL(8,2)   NOT NULL
 
-- color VARCHAR(50) NOT NULL
+- color             VARCHAR(50)     NOT NULL
 
-- transmission VARCHAR(50) NOT NULL
+- transmission      VARCHAR(50)     NOT NULL
 
-- description TEXT NULL
+- description       TEXT            NULL
 
-- horsepower INT NOT NULL
+- horsepower        SMALLINT        NOT NULL
 
-- displacement_cc INT NOT NULL
+- displacement_cc   SMALLINT        NOT NULL
 
-- places TINYINT NOT NULL
+- places            TINYINT         NOT NULL
 
-- doors TINYINT NOT NULL
+- doors             TINYINT         NOT NULL
 
-- marches TINYINT NOT NULL
+- marches           TINYINT         NOT NULL
 
-- empty_weight INT NULL
+- empty_weight      INT             NULL
 
-- emission_class VARCHAR(50) NOT NULL
+- emission_class    VARCHAR(50)     NOT NULL
 
-- type VARCHAR(50) NOT NULL (*suv, berlina, citycar, ecc.*)
+- power             SMALLINT        NOT NULL (*60Kw\h*)
 
-- traction CHAR(3) NOT NULL DEFAULT (*2WD*)
+- type              VARCHAR(50)     NOT NULL (*suv, berlina, citycar, ecc.*)
 
-- previous_owners TINYINT NULL
+- traction          CHAR(3)         NOT NULL DEFAULT (*2WD*)
 
-- image_url VARCHAR(255) NULL
+- previous_owners   TINYINT         NULL
+
+- image_url         VARCHAR(255)    NULL
